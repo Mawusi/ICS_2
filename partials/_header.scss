@@ -1,0 +1,173 @@
+header{
+    @include gradientBackground;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+    .container{
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 46% 46%;
+        gap: 8%;
+        align-items: center;
+        justify-content: space-between;
+
+        .header__content{
+            h1{
+                font-size: 3rem;
+                // line-height: 1.1;
+                // letter-spacing: -3px;
+                font-weight: 600;
+            }
+
+            p{
+                margin: .7rem 0 .7rem;
+                color: $light-color;
+                font-size: 1rem;
+            }
+
+            ul{
+                margin-bottom: 2rem;
+                li{
+                    padding: .2rem .2rem;
+                    h3{
+                        font-size: 1rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .btn-address{
+                font-size: .8rem;
+                padding: .5rem .5rem;
+            }
+
+            .bxs-map-pin, .bxs-phone{
+                font-weight: 600;
+                // color: red;
+                padding-right: .6rem;
+            }
+
+            .quick_links{
+
+                .bxs-phone-call, .bxs-envelope{
+                    color: $white-color;
+                    font-size: 2.5rem;
+                }
+                
+                background: rgba(0, 0, 0, 0.3);
+                width: max-content;
+                display: block;
+                padding: 0.4rem .8rem;
+                z-index: 2;
+                position: fixed;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 3.5em;
+                display: flex;
+                gap: 0.8rem;
+                border-radius: 3rem;
+                backdrop-filter: blur(15px);
+
+                a{
+                    background: transparent;
+                    padding: 0.3rem;
+                    border-radius: 50%;
+                    display: flex;
+                    color: $primary-color-variant;
+                    font-size: 1.5rem;
+                    margin-right: .3em;
+                    margin-left: .3em;
+
+                    &:hover{
+                        // background: rgba(0, 0, 0, 0.3);
+                        background: $secondary-color;
+                        
+                    }
+                }
+
+                .active{
+                    background: $secondary-color;
+                    color: $white-color;
+                }
+            }
+        }
+
+    }
+
+   
+
+}
+
+.after_header_background{
+    background: url('../images/Home/AdobeStock_214803637-scaled.jpeg'); 
+}
+
+// .testimonials_image{
+//     width: 15%;
+//     position: absolute;
+//     bottom: -15em;
+//     margin-left: 1em;
+// }
+
+.after_service_background{
+    background: url('../images/Assistance-Animals/therapy-dogs-social.jpg');
+}
+
+.after_appointment_background{
+    background: url('../images/Home/GettyImages-1095145466-scaled.jpg');
+}
+
+.after_header_background, 
+.after_service_background,
+.after_appointment_background
+{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    background-color: rgba(210, 238, 172, 0.727);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    header{
+        height: 60vh;
+
+        .container{
+            gap: 1rem;
+            .header__content{
+                h1{
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: .9rem;
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+        // padding-top: 1rem;
+
+        .container{
+            grid-template-columns: 1fr;
+            text-align: center;
+
+            
+        }
+    }
+}

@@ -1,0 +1,105 @@
+#faqs{
+    // background: $white-color;
+    background: rgba(210, 238, 172, 0.727);
+    padding: 6rem 0 3rem 0;
+
+    h2{
+        text-align: center;
+        // margin-bottom: 1rem;
+    }
+
+    .line{
+        width: 7em;
+        height: .2em;
+        background: $secondary-color;
+        margin: .5em auto;
+        margin-bottom: 2em;
+        border-radius: 5em;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        
+
+        .faq{
+            box-shadow: 0 1rem 1.6rem rgba($black-color, 0.75);
+            transition: all .7s ease 0s;
+            padding: .8rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: .1rem;
+            height: fit-content;
+            background: $secondary-color;
+            // @include gradientBackground;
+            cursor: pointer;
+
+            &:hover{
+                background: $white-color;
+                color: $black-color;
+                
+                h4, .uil-plus, .uil-minus{
+                    color: $secondary-color;
+                }
+            }
+
+            .faq__icon{
+                align-self: flex-start;
+                font-size: 1.2rem;
+                color: $white-color;
+            }
+
+            h4{
+                font-size: .9rem;
+                line-height: 1;
+                color: $white-color
+            }
+
+            p{
+                font-size: .8rem;
+                margin-top: 0.9rem;
+                display: none;
+                color: $black-color;
+                // padding: .7rem;
+                font-weight: 600;
+                // background: $white-color;
+                line-height: 1.7;
+            }
+
+        }
+
+        .faq.open p{
+            display: block;
+        }  
+        
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #faqs{
+        padding: 4.9rem 0 1.5rem 0;
+        
+        h2{
+            font-size: 1.2rem;
+            color: $black-color;
+        }
+        .container{
+
+            h4{
+                font-size: .1rem;
+            }
+
+            p{
+                font-size: 0.9rem;
+            }
+
+            grid-template-columns: 1fr;
+
+            .faq{
+                padding: .5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@mixin footer_button($textColor: $white-color, $backgroundColor: $secondary-color) {
+    
+    display: inline-block;
+    width: fit-content;
+    padding: 0.6rem .6rem;
+    border-radius: 0.4rem;
+    // background: $backgroundColor;
+    background: lighten($backgroundColor , 8%);
+    box-shadow: 0 1rem 1.6rem rgba($black-color, 0.65);
+    color: $textColor;
+    cursor: pointer;
+    transition: all 400ms ease;
+    font-size: .8rem;
+
+    &:hover{
+        // background: lighten($backgroundColor , 8%);
+        background: $backgroundColor;
+        box-shadow: 0 1rem 1.6rem rgba($black-color, 0.35);
+    }
+}
+
+@mixin address_button($textColor: $white-color, $backgroundColor: $secondary-color) {
+    
+    display: inline-block;
+    width: fit-content;
+    // padding: .5rem;
+    border-radius: 0.4rem;
+    // background: $backgroundColor;
+    background: lighten($backgroundColor , 8%);
+    box-shadow: 0 1rem 1.6rem rgba($black-color, 0.65);
+    color: $textColor;
+    cursor: pointer;
+    transition: all 400ms ease;
+    // font-size: .8rem;
+    font-weight: 600;
+
+    &:hover{
+        background: $backgroundColor;
+        box-shadow: 0 1rem 1.6rem rgba($black-color, 0.35);
+    }
+}
+
+@mixin appointment_button($textColor: $white-color, $backgroundColor: $color-pink) {
+    
+    display: inline-block;
+    width: fit-content;
+    padding: 0.7rem .7rem;
+    border-radius: 0.4rem;
+    background: lighten($color-pink, 20%);
+    box-shadow: 0 1rem 1.6rem rgba($black-color, 0.65);
+    color: $textColor;
+    cursor: pointer;
+    transition: all 400ms ease;
+    font-size: .1rem;
+
+    &:hover{
+        background: lighten($secondary-color , 10%);
+        box-shadow: 0 1rem 1.6rem rgba($black-color, 0.65);
+    }
+}
+
+@mixin appointment_button_change($textColor: $white-color, $backgroundColor: $secondary-color) {
+    
+    display: inline-block;
+    width: fit-content;
+    padding: 0.7rem .7rem;
+    border-radius: 0.4rem;
+    background: $backgroundColor;
+    color: $textColor;
+    cursor: pointer;
+    transition: all 400ms ease;
+    font-size: .1rem;
+
+    &:hover{
+        background: lighten($backgroundColor , 10%);
+        box-shadow: 0 1rem 1.6rem rgba($black-color, 0.65);
+    }
+}
+
+@mixin gradientBackground {
+    background: linear-gradient(135deg, $primary-color, $primary-color-variant);
+    color: $white-color;
+    h1, h2, h3, h4, h5{
+        color: $white-color;
+    }
+}
+
+@mixin gradientBackgroundAppointment {
+    background: linear-gradient(175deg, $primary-color, $primary-color-variant);
+    color: $white-color;
+    h1, h2, h3, h4, h5{
+        color: $white-color;
+    }
+}
+
+@mixin gradientBackgroundFooter {
+    background: linear-gradient(185deg, $primary-color, $primary-color-variant);
+    color: $white-color;
+    h1, h2, h3, h4, h5{
+        color: $white-color;
+    }
+}

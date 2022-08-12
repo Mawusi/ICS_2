@@ -1,0 +1,362 @@
+// Main homepage
+
+//For services now
+
+.home{
+
+    // background: $white-color;
+    // background: rgba(217, 232, 194, 0.727);
+    background: rgba(210, 238, 172, 0.727);
+
+    padding: 6rem 0 3rem 0;
+    // padding-bottom: 0;
+
+    // .heading{
+    //     font-size: 2rem;
+    //     text-align: center;
+    //     margin-bottom: 1em;
+    // }
+    
+
+    .heading{
+        // margin-top: 4rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 2.5rem;
+        color: var(--white);
+        text-transform: uppercase;
+
+        span{
+            color: $secondary-color;
+            text-transform: uppercase;
+        }
+    }
+    
+    
+    // .service-quote{
+    //     padding: 1rem;
+    //     @include gradientBackground;
+    //     color: $white-color;
+    //     box-shadow: 0 1rem 1.6rem rgba($black-color, 0.75);
+    //     transition: all .7s ease 0s;
+
+    //     &:hover{
+    //         background: $white-color;
+    //         color: $black-color;
+    //     }
+    // }
+    .service-quote{
+        font-style: italic;
+    }
+
+    // .ndis_image{
+    // width: 10%;
+    // position: absolute;
+    // bottom: 10em;
+    // position: fixed;
+    // right: 1%;
+    // }
+
+    .container{
+
+        // backgrond: wheat;
+        // @include gradientBackground;
+        // padding: 2em;
+
+        // .shift_button{
+        //     // margin: 5em auto;
+        //     // margin-left: 21rem;
+        // }
+
+        .row{
+            height: 60vh;
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 1.5rem;
+            border-bottom: .1rem solid $secondary-color;
+
+            &:last-child{
+                border-bottom: none;
+            }
+            
+            .title{
+                font-weight: bold;
+                font-size: 1.7rem;
+                color: $black-color;
+                // margin-bottom: .1em;
+                // color: red;
+                span{
+                    color: $secondary-color;
+                }
+            }
+
+            .desc{
+                line-height: 1.5rem;
+                margin-bottom: 1.5em;
+            }
+
+            .middle_text{
+                margin-left: 0.9em;
+            }
+
+            .middle_text_adjust{
+                margin-left: 1.5em;
+            }
+
+            .line{
+                width: 7em;
+                height: .2em;
+                background: $secondary-color;
+                margin-bottom: 1em;
+                border-radius: 5em;
+            }
+    
+        }
+
+        .services_cta{
+            margin: 2em auto;
+            width: 100%;
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/Home/homecareversusnursingcare.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 1.5em;
+            text-align: center;
+            padding: 4em 0;
+
+            h1{
+                color: #fff;
+                margin-bottom: 1.5em;
+            }
+        }
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    #services{
+        .container{
+            width: $container-lg;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    section{
+        margin-top: .1em;
+    }
+
+    #services{
+        padding: 5rem 0 3rem 0;
+
+        .heading{
+            font-size: 1.7rem;
+        }
+
+        p{
+            font-size: .9rem;
+        }
+
+        .ndis_image{
+            width: 15%;
+            position: absolute;
+            bottom: 30em;
+            position: fixed;
+            right: 1%;
+        }
+
+        .container{
+
+            .shift_button{
+                display: block;
+                margin: 1em auto;
+            }
+            
+            .row{
+                height: 75vh;
+                padding-bottom: .1em;
+                margin-bottom: .1em;
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                text-align: center;
+
+                .title{
+                    font-size: 1.5em;
+                    margin-bottom: .1em;
+                }
+
+                .line{
+                    margin: .3em auto;
+                }
+            }
+
+            .middle{
+                
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap-reverse;
+                gap: 1rem;
+                
+                .content{
+                    flex: 1 1 40rem;
+                    text-align: center;
+                }
+                
+                .image{
+                    flex: 1 1 40rem;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .middle_text{
+                    margin-left: 0;
+                }
+                
+            }
+
+            
+        } 
+    }
+}
+
+
+
+
+
+//Upcoming services
+#upcoming_services{
+    background: $white-color;
+    padding: 3rem 0 3rem 0;
+
+    h2{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .container{
+        .head{
+            display: flex;
+            justify-content: space-between;
+        
+            .left{
+                h4{
+                    font-style: italic;
+                    color: $black-color;
+                    margin-bottom: 1rem;
+                    font-size: 1.5em;
+                }
+                h2{
+                    color: $secondary-color;
+                    font-size: 2.5em;
+                }
+            }
+
+            .right{
+
+                display: flex;
+                gap: 2rem;
+                width: 18rem;
+
+                .image{
+                    width: 20rem;
+                }
+
+                h4{
+                    margin-top: 1rem;
+                    color: $black-color;
+                    font-weight: 700;
+                }
+            }
+        
+        }
+
+        article{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 3rem;
+            margin-top: 1.5rem;
+
+            .info{
+                h4{
+                    font-size: 1.3rem;
+                    margin-bottom: .4rem;
+                    color: $black-color;
+                    font-weight: 700;
+                }
+
+                h5{
+                    font-size: 1rem;
+                    margin: 1.5rem 0 .4rem 0;
+                    color: $black-color;
+                    font-weight: 500;
+                }
+
+                p{
+                    font-size: .9rem;
+                }
+
+                .respite_inform{
+                    margin-top: .5rem;
+                    margin-bottom: .2rem;
+                }
+
+                .respite_list{
+                    list-style: block;
+                    font-size: .8rem;
+                    font-weight: 600;
+                }
+
+                a{
+                    display: inline-block;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #upcoming_services{
+        padding: 3rem;
+        .container{
+            .head{
+
+                .left{
+
+                    h4{
+                        font-size: 1rem;
+                    }
+                    
+                    h2{
+                        font-size: 1.5em;
+                    }
+                }
+
+                .right{
+                    display: none;
+                }
+            }
+
+            article{
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                text-align: center;
+            }
+        } 
+    }
+}
+
+// Animation
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}

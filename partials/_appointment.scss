@@ -1,0 +1,132 @@
+#appointment{
+    // background: wheat;
+    @include gradientBackgroundAppointment;
+    padding: 6rem 0 6rem 0;
+
+    h2{
+        text-align: center;
+        // margin-bottom: 4rem;
+    }
+
+    .line{
+        width: 7em;
+        height: .2em;
+        background: $white-color;
+        margin: .5em auto;
+        margin-bottom: 1em;
+        border-radius: 5em;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 47% 47%;
+        gap: 6%;
+
+        .info{
+            p{
+                margin: 0.5rem 0 2rem;
+            }
+
+            article{
+                display: flex;
+                gap: 1.5rem;
+                margin-bottom: 1.5rem;
+
+                small{
+                    margin-top: 0.2rem;
+                    display: block;
+                    font-size: .8rem;
+                }
+
+                .info__icon{
+                    background: $secondary-color;
+                    color: $white-color;
+                    padding: 0.4rem;
+                    border-radius: 50%;
+                    display: flex;
+                    height: fit-content;
+                    font-size: 1.2rem;
+                }
+
+                .info__icon__animal{
+                    background: $secondary-color;
+                    color: $white-color;
+                    padding: 0.7rem;
+                    border-radius: 50%;
+                    display: flex;
+                    height: fit-content;
+                    font-size: 1.2rem;
+                }
+            }
+
+            .appointment_image{
+                width: 15%;
+                position: absolute;
+                // bottom: 22em;
+                margin-left: 10em;
+            }
+        }
+        
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+
+            .form__group{
+                label{
+                    font-size: 0.85rem;
+                    margin-bottom: 0.4rem;
+                    display: inline-block;
+                    font-weight: 600;
+                }
+
+                input, textarea, select{
+                    background: $white-color;
+                    padding: 0.85rem 1rem;
+                    display: block;
+                    width: 100%;
+                    border-radius: 0.4rem;
+                    resize: none;
+                    appearance: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #appointment{
+        padding: 4.9rem 0 1.5rem 0;
+
+        .container{
+            grid-template-columns: 1fr;
+            gap: 2rem;
+
+            .info{
+                margin-bottom: 2.5rem;
+
+                h2, p{
+                    text-align: center;
+                }
+
+                h2{
+                    font-size: 1.2rem;
+                    // color: $black-color
+                }
+
+                p{
+                    font-size: 0.9rem;
+                }
+
+                .line{
+                    margin-bottom: 1em;
+                }
+
+                .appointment_image{
+                    width: 15%;
+                    right: 40%;
+                }
+            }
+        }
+    }
+}
