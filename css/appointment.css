@@ -7,7 +7,7 @@ body{
 }
 
 .contact{
-    height: 80vh;
+    height: auto;
 }
 
 .contact__container{
@@ -32,7 +32,7 @@ body{
 }
 
 .aside__image{
-    width: 12rem;
+    width: auto;
     margin-bottom: 1rem;
 }
 
