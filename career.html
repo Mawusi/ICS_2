@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment | ICS</title>
+    <title>ICS</title>
 
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
     <!-- minified css -->
     <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="stylesheet" href="./css/main_color.css">
-    <link rel="stylesheet" href="./css/appointment.css">
 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <nav>
@@ -48,63 +47,81 @@
             <button id="close__nav-btn"><i class='bx bx-x'></i></button>
         </div>
     </nav>
-
     <header style="height: 5vh;"></header>
+    
+        <section id="appointment">
+            <div class="container">
+                <div class="info">
+                    <h2>Current Job Opportunities<i class="uil uil-envelope-add"></i></h2>
+                    <div class="line"></div>
+                    <p>Kindly submit your resume and tell us a bit about you and why you would love to work with us.</p>
+                    <article>
+                        <div class="info__icon">
+                            <i class="uil uil-building"></i>
+                        </div>
+                        <div>
+                            <h4>Accommodation / Tenancy</h4>
+                            <small>We understand the importance of having a stable accommodation and the peace that follows</small>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="info__icon">
+                            <i class="uil uil-car-sideview"></i>
+                        </div>
+                        <div>
+                            <h4>Assist-Travel / Transport</h4>
+                            <small>Available to assist you whenever you require assistance to travel to your specific destination.</small>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="info__icon">
+                            <i class="uil uil-trophy"></i>
+                        </div>
+                        <div>
+                            <h4>Innovative Community Participation</h4>
+                            <small>communication skills, sense of belongingness, socialising skills, and personality development.</small>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="info__icon">
+                            <i class="uil uil-clipboard-notes"></i>
+                        </div>
+                        <div>
+                            <h4>Household Tasks</h4>
+                            <small>always there to take care of the tasks to enable you to live comfortably, safely and independently.</small>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="info__icon__animal">
+                            <i class='bx bxs-dog'></i>
+                        </div>
+                        <div>
+                            <h4>Assistance Animals</h4>
+                            <small>We ensure that the animal is suitable to accompany and support you as you participate in the community.</small>
+                        </div>
+                    </article>
+                </div>
+                <form action="https://formspree.io/f/xjvllbey" method="POST">
+                    <div class="form__group">
+                        <input type="text" placeholder="Name" name="Patient's Name" id="name" required>
+                    </div>
+                    
+                    <div class="form__group">
+                        <input type="email" placeholder="Email" name="Email Address" id="email" required>
+                    </div>
 
-    <section class="contact">
-        <div class="container contact__container">
-            <aside class="contact__aside">
-                <div class="aside__image">
-                    <img src="./images/Contact Us/th-901358974" alt="">
-                </div>
-                <h2>We're here for you</h2>
-                <p>Get in touch with our client support team. We'd love to hear from you.</p>
-                <ul class="contact__details">
-                    <li>
-                        <i class="uil uil-phone-times"></i>
-                        <h5>+61 4973 62447</h5>
-                    </li>
-                    <li>
-                        <i class="uil uil-envelope"></i>
-                        <h5>info@independentcareservices.com.au</h5>
-                    </li>
-                    <li>
-                        <i class="uil uil-location-point"></i>
-                        <h5>1217 KILMINGTON ROAD, DAVOREN PARK SA 5113</h5>
-                    </li>
-                </ul>
-                <!-- <ul class="contact__socials">
-                    <li><a href="https://facebook.com"><i class="uil uil-facebook-f"></i></a></li>
-                    <li><a href="https://instagram.com"><i class="uil uil-instagram"></i></a></li>
-                    <li><a href="https://twitter.com"><i class="uil uil-twitter"></i></a></li>
-                    <li><a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a></li>
-                </ul> -->
-            </aside>
+                    <div class="form__group">
+                        <label for="file" class="custom-uploader">Kindly upload your resume (pdf/doc/docx)</label> 
+                        <input type="file" id="myFile" name="filename" accept=".pdf,.doc,.docx">                    
+                    </div>
 
-            <form action="https://formspree.io/f/xjvljgln" method="POST" class="contact__form">
-                <div class="form__name">
-                    <input type="text" name="Name" id="name" placeholder="Enter Your Name" required>
-                    <input type="number" name="Phone Number" id="phone" placeholder="Enter Phone" required>
-                </div>
-                <div class="form__name">
-                    <input type="email" name="Email Address" id="email" placeholder="Enter Email Address" required>
-                    <!-- <input type="date" name="Date" id="date" placeholder="Choose a date" required> -->
-                </div>
-                <div class="form__name">
-                    <select name="Services" id="services" required>
-                        <option value="Accommodation-Tenancy">Accommodation-Tenancy</option>
-                        <option value="Assist-Travel/Transport">Assist-Travel/Transport</option>
-                        <option value="Innovative Community Participation">Innovative Community Participation</option>
-                        <option value="Household Tasks">Household Tasks</option>
-                        <option value="Assistance Animals">Assistance Animals</option>
-                    </select>
-                </div>
-                <textarea name="Message" id="message" rows="6" placeholder="Add a message" required></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-
+                    <div class="form__group">
+                        <textarea name="Added Message" id="message" rows="6" placeholder="Any additional message or commment" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit" class="btn-primary">
+                </form>
+            </div>
+        </section>
 
     <footer>
         <div class="container">
@@ -142,7 +159,7 @@
                 <h3>Permalinks</h3>
                 <!-- <a href="#">Home</a> -->
                 <!-- <a href="#services">Services</a>     -->
-                <a href="careers.html" target="_blank">Careers</a>  
+                <a href="career.html" target="_blank">Careers</a>  
                 <!-- <a href="#testimonials">Testimonials</a>     -->
                 <!-- <a href="#appointment" class="btn-primary">Make Appointment</a> -->
             </article>
@@ -176,8 +193,9 @@
         </div>
     </footer>
 
-
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
-
+    
 </body>
 </html>
