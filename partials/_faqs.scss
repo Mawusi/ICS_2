@@ -75,30 +75,50 @@
         }  
         
     }
+
+    .ndis_know_more{
+
+        h5{
+            padding: 4em 0 1em 0;
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {
     #faqs{
         padding: 4.9rem 0 1.5rem 0;
+    
         
         h2{
             font-size: 1.2rem;
             color: $black-color;
+            padding: 0em 2em 0em 2em;
         }
+
         .container{
-
-            h4{
-                font-size: .1rem;
-            }
-
-            p{
-                font-size: 0.9rem;
-            }
 
             grid-template-columns: 1fr;
 
             .faq{
                 padding: .5rem;
+                background: $white-color;
+
+                h4, .uil-plus, .uil-minus{
+                    font-size: .9em;
+                    color: $secondary-color;
+                }
+
+                p{
+                    font-size: 0.9rem;
+                }
+                
+            }
+        }
+
+        .ndis_know_more{
+
+            h5{
+                padding: 4em 2em 1em 2em;
             }
         }
     }

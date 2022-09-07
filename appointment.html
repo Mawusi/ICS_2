@@ -25,7 +25,7 @@
             </a>
             
             <ul id="nav__items">
-                <li><a class="active" href="index.html">Home<i class='bx bx-home-alt-2'></i></a></li>
+                <li><a href="index.html">Home<i class='bx bx-home-alt-2'></i></a></li>
                 <li><a href="about.html">About Us<i class='bx bx-user'></i></a></li>
                 <li><a href="services.html">Services<i class="uil uil-list-ul"></i></a>
                     <div class="sub__menu">
@@ -33,13 +33,14 @@
                             <li><a href="accommodation-tenancy.html">Accommodation & Tenancy</a></li>
                             <li><a href="assist-travel.html">Assist-Travel & Transport</a></li>
                             <li><a href="innov-community.html">Innovative Community Participation</a></li>
-                            <li><a href="household-tasks.html">Household Tasks</a></li>
+                            <li><a href="household-tasks.html">Household Tasks & Personal Care</a></li>
                             <li><a href="animal-assistance.html">Assistance Animals</a></li>
                         </ul>
                     </div>
                 </li>
                 <li><a href="ndis.html">NDIS</a></li>
-                <li><a href="covid_info.html">Covid Info</a></li>
+                <li><a href="careers.html">Join Us</a></li>
+                <!-- <li><a href="covid_info.html">Covid Info</a></li> -->
                 <!-- <li><a href="#specialists">Specialists</a></li> -->
                 <!-- <li><a href="#testimonials">Testimonials</a></li> -->
                 <li><a class="btn" href="appointment.html">Contact Us</a></li>
@@ -62,7 +63,7 @@
                 <ul class="contact__details">
                     <li>
                         <i class="uil uil-phone-times"></i>
-                        <h5>+61 4973 62447</h5>
+                        <h5>+0482623949</h5>
                     </li>
                     <li>
                         <i class="uil uil-envelope"></i>
@@ -70,7 +71,7 @@
                     </li>
                     <li>
                         <i class="uil uil-location-point"></i>
-                        <h5>1217 KILMINGTON ROAD, DAVOREN PARK SA 5113</h5>
+                        <h5>DAVOREN PARK SA 5113</h5>
                     </li>
                 </ul>
                 <!-- <ul class="contact__socials">
@@ -81,16 +82,20 @@
                 </ul> -->
             </aside>
 
-            <form action="https://formspree.io/f/xjvljgln" method="POST" class="contact__form">
+            <form action="https://formsubmit.co/ce2edbd16b15c8284f1d0b717a28a079" method="POST" class="contact__form">
+
                 <div class="form__name">
                     <input type="text" name="Name" id="name" placeholder="Enter Your Name" required>
                     <input type="number" name="Phone Number" id="phone" placeholder="Enter Phone" required>
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_subject" value="New submission from client!">
+                    <input type="hidden" name="_next" value="http://localhost:8080/thanks_contact_us.html">
                 </div>
                 <div class="form__name">
-                    <input type="email" name="Email Address" id="email" placeholder="Enter Email Address" required>
+                    <input type="email" name="Email" id="email" placeholder="Enter Email Address" required>
                     <!-- <input type="date" name="Date" id="date" placeholder="Choose a date" required> -->
                 </div>
-                <div class="form__name">
+                <!-- <div class="form__name">
                     <select name="Services" id="services" required>
                         <option value="Accommodation-Tenancy">Accommodation-Tenancy</option>
                         <option value="Assist-Travel/Transport">Assist-Travel/Transport</option>
@@ -98,7 +103,7 @@
                         <option value="Household Tasks">Household Tasks</option>
                         <option value="Assistance Animals">Assistance Animals</option>
                     </select>
-                </div>
+                </div> -->
                 <textarea name="Message" id="message" rows="6" placeholder="Add a message" required></textarea>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
@@ -110,7 +115,7 @@
         <div class="container">
             <article>
                 <div class="ndis_image">
-                    <img src="./images/General/ndis-removebg-preview.png"" alt="">
+                    <img src="./images/General/ndis-removebg-preview.png" alt="">
                 </div>
                 <!-- <h3>Support</h3>
                 <a href="#">Privacy Policy</a>
@@ -151,7 +156,7 @@
                 <h3>Contact Us</h3>
                 <div class="footer_address">
                     <i class="bx bxs-phone"></i>
-                    <small>+61 4973 62447</small>
+                    <small>+0482623949</small>
                 </div>
                 <div class="footer_address">
                     <i class="bx bx-mail-send"></i>
@@ -176,8 +181,8 @@
         </div>
     </footer>
 
-
     <script src="./main.js"></script>
+    
 
 </body>
 </html>

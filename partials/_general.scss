@@ -59,6 +59,10 @@ section{
     @include footer_button($white-color, $secondary-color);
 }
 
+.btn-ndis{
+    @include ndis_button($white-color, $black-color);
+}
+
 @media screen and (max-width: 1024px) {
     .container{
         width: $container-md;

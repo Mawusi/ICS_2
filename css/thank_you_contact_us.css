@@ -1,0 +1,11 @@
+#faqs .feedback_form{
+    width: 5%;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+    #faqs .feedback_form{
+        width: 8%;
+    }
+}

@@ -6,3 +6,57 @@ Contents for
 
     Pictures....done
     Add NDIS logo....done
+
+    <section id="faqs">
+        <!-- <h2>Frequently Asked Questions<i class="uil uil-file-question"></i></h2> -->
+        <h2>Understanding the NDIS<i class="uil uil-file-question"></i></h2>
+        <div class="line"></div>
+        <p>To be eligible for NDIS, following are the conditions that must align with you/your current situation
+
+            Have a significant disability that refrains you to participate in the community actively, reduces your ability to carry out certain tasks, etc.,
+            Be an Australian citizen, Permanent Resident or hold a Protected Special Category Visa and,
+            Be under 65 years of age.
+            For further insights in the eligibility criteria, visit https://www.ndis.gov.au/ndis-access-checklist.
+        </p>
+        
+        <div class="container">
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What is NDIS?</h4>
+                    <p>The National Disability Insurance Scheme (NDIS) has been developed to improve choice and create better outcomes for people with a disability. NDIS funds any goal that you set for yourself (those that NDIS considers reasonable and fair of course) and you are free to choose any NDIS service provider you want. You can learn more about the NDIS on the official federal government NDIS website.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Who is Eligible for NDIS?</h4>
+                    <p>To be eligible for NDIS, following are the conditions that must align with you/your current situation
+
+                        Have a significant disability that refrains you to participate in the community actively, reduces your ability to carry out certain tasks, etc.,
+                        Be an Australian citizen, Permanent Resident or hold a Protected Special Category Visa and,
+                        Be under 65 years of age.
+                        For further insights in the eligibility criteria, visit https://www.ndis.gov.au/ndis-access-checklist.
+                    </p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Can I become a NDIS participant after 65 years of age?</h4>
+                    <p>If you are over the age of 65 years, you will not be eligible to participate in the NDIS. You might be eligible for funding by the Aged Care System, instead.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What is the eligibility criteria for NDIS?</h4>
+                    <p>The NDIA is tasked with assessment of your eligibility to participate in the NDIS. The following are the eligibility criteria: 
+
+                        Be under the age of 65 years of age 
+                        Be a resident of Australia (Australian citizen, or Permanent Visa Holder or a New Zealand citizen who holds a Protected Special Category Visa) 
+                        Have a condition or an impairment that is permanent and prevents you from participating in everyday activities.</p>
+                </div>
+            </article>
+        </div>
+    </section>

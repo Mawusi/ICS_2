@@ -1,7 +1,7 @@
 .line{
     width: 130px;
     height: 4px;
-    background: #fc036b;
+    background: #079868;
     margin: .1em 0;
     margin-bottom: 2em;
     border-radius: 5px;
@@ -67,7 +67,7 @@
     font-size: 1rem;
 }
 .household_features .features_text{
-    margin: 2em auto;
+    margin: 1em auto;
 }
 
 .household_features .container .uil{
@@ -81,6 +81,18 @@
     align-items: center;
     justify-content: space-between;
     margin: 5em auto;
+}
+
+.household-tasks-extras .container h6{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #1F1F2E;
+    font-size: 1rem;
+}
+
+.household-tasks-extras .features_text{
+    margin: 1em auto;
 }
 
 .household-tasks-extras .image-gallery{
