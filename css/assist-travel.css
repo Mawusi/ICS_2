@@ -29,6 +29,9 @@
     color: white;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    bottom: 3.4rem;
+    left: 5%;
 }
 
 .explore-content h1{
@@ -129,10 +132,10 @@
 
 @media screen and (max-width: 600px) {
 
-    .explore{
+    /* .explore{
         background-size: contain;
         background-color: rgba(210, 238, 172, 0.727);
-    }
+    } */
 
     .explore-content{
         width: 80%;

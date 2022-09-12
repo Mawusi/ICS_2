@@ -6,6 +6,25 @@ body{
     background: rgba(210, 238, 172, 0.727);
 }
 
+nav{
+    /* background: red; */
+    background: rgba(18, 56, 13, 0.841);
+    /* background: rgba(25, 34, 12, 0.727); */
+}
+
+.tagline_mob{
+    display: none;
+}
+
+#contact{
+    margin-top: 15rem;
+    zoom: 90%;
+}
+
+#contact .container{
+margin-top: 2rem;
+}
+
 .contact{
     height: auto;
 }
@@ -102,6 +121,16 @@ input, textarea, select{
 
 @media screen and (max-width: 1024px) {
 
+    #contact{
+        zoom: 100%;
+        margin-top: 9rem;
+    }
+
+    .tagline_mob{
+        display: block;
+        font-family: Brush Script Std, cursive;
+    }
+
     .contact{
         margin-top: 5em;
         height: 95vh;
@@ -129,9 +158,9 @@ input, textarea, select{
 @media screen and (max-width: 600px) {
 
     .contact{
-        margin-top: 5em;
+        /* margin-top: 5em; */
         /* margin-bottom: 10em; */
-        height: 165vh;
+        height: 130vh;
     }
 
     .contact__container{

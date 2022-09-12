@@ -79,7 +79,13 @@
     .ndis_know_more{
 
         h5{
+            font-size: 1.1rem;
             padding: 4em 0 1em 0;
+        }
+
+        a{
+            font-size: .9rem;
+            font-weight: 600;
         }
     }
 }
@@ -118,6 +124,7 @@
         .ndis_know_more{
 
             h5{
+                font-size: 1rem;
                 padding: 4em 2em 1em 2em;
             }
         }

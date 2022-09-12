@@ -1,0 +1,36 @@
+nav{
+    /* background: red; */
+    background: rgba(18, 56, 13, 0.841);
+    /* background: rgba(25, 34, 12, 0.727); */
+}
+
+.tagline_mob{
+    display: none;
+}
+
+#appointment{
+    margin-top: 9rem;
+}
+
+#appointment .container{
+margin-top: -2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    #appointment{
+        margin-top: 6rem;
+    }
+
+    .tagline_mob{
+        display: block;
+        font-family: Brush Script Std, cursive;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #appointment{
+        margin-top: 6rem;
+    }
+}
+

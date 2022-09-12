@@ -1,3 +1,15 @@
+nav{
+    /* background: red; */
+    background: rgba(18, 56, 13, 0.841);
+    /* background: rgba(25, 34, 12, 0.727); */
+}
+
+#faqs{
+    margin-top: 9rem;
+    /* zoom: 90%; */
+}
+
+
 #faqs .feedback_form{
     width: 5%;
     margin: auto;
@@ -5,6 +17,10 @@
 
 
 @media screen and (max-width: 600px) {
+    #faqs{
+        margin-top: 5rem;
+    }
+
     #faqs .feedback_form{
         width: 8%;
     }

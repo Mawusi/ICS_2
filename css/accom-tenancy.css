@@ -1,3 +1,7 @@
+nav h3{
+    text-shadow: black 1px 1px 2px;
+}
+
 .line{
     width: 130px;
     height: 4px;
@@ -28,6 +32,9 @@
     color: white;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    bottom: 5rem;
+    left: 5%;
 }
 
 .explore-content h1{
@@ -206,10 +213,11 @@
 
 @media screen and (max-width: 600px) {
 
-    .explore{
+    /* .explore{
         background-size: contain;
+        margin: 0rem;
         background-color: rgba(210, 238, 172, 0.727);
-    }
+    } */
 
     .explore-content{
         width: 80%;

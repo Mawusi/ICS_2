@@ -1,0 +1,259 @@
+#about{
+    margin: 0rem;
+}
+
+/* For quick links */
+.quick_links{          
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.5rem .8rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3em;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+
+.quick_links a{
+    background: transparent;
+    padding: 0.3rem;
+    border-radius: 50%;
+    display: flex;
+    color: gray;
+    font-size: 1.3rem;
+    margin-right: .5em;
+    margin-left: .5em;
+}
+
+.quick_links a:hover{
+    background: #079868;
+    color: white;
+}
+
+.quick_links .active{
+    background: #079868;
+    color: white ;
+}
+/* End of quick links */
+
+
+/* Features */
+.features{
+    background-color: #F2F2F4 !important;
+    padding: 3rem 0;
+}
+
+.features .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+.features .container h6{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #1F1F2E;
+    font-size: 1rem;
+}
+
+.features .about_description{
+    font-size: 15px;
+    color: #777777;
+    line-height: 30px;
+    padding: 5em auto;
+}
+
+.features .feature_content h1{
+    font-size: 35px;
+    color: #079868;
+    font-weight: 700;
+    margin-bottom: .2rem;
+}
+/* End of Features */
+
+
+/* Profile */
+#main_profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    min-height: 100vh;
+}
+
+#main_profile .container{
+    position: relative;
+    /* width: 1000px; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin: 20px; */
+}
+
+#main_profile .container .card{
+    position: relative;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    width: 30%;
+    margin: 20px 0;
+}
+
+#main_profile .container .card .imgBx{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #333;
+   z-index: 1;
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   overflow: hidden;
+   transition: 0.5s ease-in-out;
+}
+
+#main_profile .container .card:hover .imgBx{
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out; 
+    background: #079868;
+}
+
+#main_profile .container .card .imgBx:before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: .7em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, .05);
+    font-weight: 700;
+}
+
+#main_profile .container .card .imgBx img{
+    max-width: 100px;
+    transition: 0.5s ease-in-out;
+    color: white;
+}
+
+#main_profile .container .card:hover .imgBx img{
+    max-width: 75px;
+}
+
+#main_profile .container .card .content{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_profile .container .card .content h3{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+#main_profile .container .card .content p{
+    font-size: .9em;
+}
+
+#main_profile .container .card .content .long_text{
+    font-size: .8em;
+}
+
+#main_profile .container .card .content a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+    font-size: .7em;
+}
+/* end of profile */
+
+
+
+/* For medium and small devices */
+
+@media (max-width: 992px){
+
+    #main_profile .container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #main_profile .container .card{
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px){
+
+    #main_profile .container .card{
+        max-width: 300px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #main_profile .container .card .imgBx{
+        position: relative;
+    }
+
+    #main_profile .container .card .imgBx, 
+    .container .card:hover .imgBx{
+        width: 100%;
+        height: 200px;
+        left: 0;
+    }
+
+    #main_profile .container .card .imgBx img, 
+    .container .card:hover .imgBx img{
+        max-width: 100px;
+    }
+
+    #main_profile .container .card .content{
+        position: relative;
+        width: 100%;
+    }
+
+    #main_profile .container .card .content a{
+        font-size: .7em;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .features .container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+        margin: 1em auto;
+        padding: 0;
+    }
+
+    .accommodation_features img{
+        padding: 1em;
+    }
+
+    .features .feature_content h1{
+        font-size: 1.2rem;
+    }
+
+}
+

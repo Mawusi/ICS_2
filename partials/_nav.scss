@@ -1,31 +1,64 @@
 nav{
-
     width: 100vw;
-    height: 7rem;
+    height: 9rem;
     position: fixed;
     z-index: 10;
     display: grid;
     place-items: center;
-    @include gradientBackground;
+    @include gradientNavBackground;
     box-shadow: 0 1rem 1rem rgba($black-color, 0.25);
+    transition: 900ms ease;
 
     &.window-scroll{
         background: $white-color;
+        border-bottom: .1rem solid $primary-color;
+        height: 7rem; 
 
         .container{
+
+            .nav__logo{
+                margin-top: -2rem;
+
+                .tagline{
+                    display: block;
+                    position: absolute;
+                    left: 14.5%;
+                    bottom: 2rem;
+                    font-size: 1rem;
+                    color: $primary-color;
+                    font-family: Brush Script Std, cursive;
+                    font-weight: 900;
+                }
+            
+                img{
+                    width: 16%;
+                    position: absolute;
+                    margin-left: -90px;
+                    // left: 15%;
+                    bottom: -3em;
+                }
+
+                h3{
+                    display: none;
+                }
+            }
 
             .sub__menu{
                 a{
                     color: $white-color;
+                    zoom: 90%;
                 }   
             }
 
             button{
-                color: $black-color;
+                color: $secondary-color;
             }
 
             a{
                 color: $black-color;
+                text-shadow: none;
+                font-weight: 600;
+                zoom: 90%;
 
                 & > h3{
                     color: $black-color;
@@ -44,22 +77,38 @@ nav{
         align-items: center;
 
         .nav__logo{
+
+            .tagline{
+                display: none;
+                transition: 900ms ease;
+            }
+
+            .tagline_mobile{
+                display: none;
+            }
             
             img{
-                width: 15%;
+                width: 20%;
                 position: absolute;
-                margin-left: -130px;
-                bottom: 1em;
+                margin: auto auto;
+                // margin-left: -160px;
+                bottom: -3.5em;
+                transition: 900ms ease;
             }
         }
 
         h3{
-            margin-left: 27px;
+            display: none;
+            // margin-left: 5px;
+            // font-size: 1.2rem;
+            // transition: 900ms ease;
+            // position: absolute;
+            // bottom: 2.5rem;
         }
 
         ul{
             display: flex;
-            gap: 3rem;
+            gap: 2.2rem;
             align-items: center;
             // padding: .1rem .1rem .1rem .1rem;
 
@@ -70,14 +119,17 @@ nav{
                 a{
                     // color: red;
                     color: $white-color;
-                    font-weight: 500;
-                    font-size: 0.9rem;
+                    font-weight: 200;
+                    font-size: 1rem;
                     display: inline-block;
-                    transition: 0.7s ease;
+                    //transition: 0.7s ease;
+                    text-shadow: black 1px 1px 2px;
+                    transition: 200ms ease;
                 }
 
                 .sub__menu{
                     display: none;
+                    zoom: 90%;
                 }
 
                 .uil, .bx{
@@ -121,6 +173,7 @@ nav{
                                     background: $white-color;
                                     a{
                                         color: $secondary-color;
+                                        text-shadow: none;
                                     }
                                 }
 
@@ -160,16 +213,75 @@ nav{
 
 @media screen and (max-width: 1024px) {
     nav{
-        height: 4rem;
+        height: 6rem;
 
         &.window-scroll{
+            height: 8rem;
+            
             .container{
-                a{
-                    color: $white-color;
+
+                .nav__logo{
+                    margin: -2rem;
+                    
+                    .tagline{
+                        display: block;
+                        left: 70px;
+                        font-size: .9rem;
+                        
+                    }
+
+                    .tagline_mobile{
+                        display: none;
+                    }
+                
+                    img{
+                        display: block;
+                        position: sticky;
+                        width: 25%;
+                        margin: auto auto;
+
+                        // width: 20%;
+                        // position: absolute;
+                        // margin-left: -50px;
+                        // bottom: -3rem;
+                    }
+    
+                    h3{
+                        display: none;
+                    }
                 }
+
+                #nav__items{
+                    top: 6rem;
+
+                    a{
+                        color: $white-color;
+                    }
+                }
+
             }
         }
+
         .container{
+
+            .nav__logo{
+
+                .tagline_mobile{
+                    display: block;
+                    padding-top: .2rem;
+                    color: $white-color;
+                    font-family: Brush Script Std, cursive;
+                }
+
+                img{
+                    display: none;
+                }
+            }
+    
+            h3{
+                display: block;
+                font-size: 1.2rem;
+            }
             
             button{
                 display: inline-block;
@@ -280,4 +392,53 @@ nav{
             }
         }
     }
+}
+
+@media screen and (max-width: 600px) {
+
+    nav{
+        
+        &.window-scroll{
+            height: 8rem;
+            
+            .container{
+    
+                .nav__logo{
+                    margin: -2rem;
+    
+                    .tagline{
+                        display: none;
+                    }
+                
+                    img{
+                        position: sticky;
+                        width: 45%;
+                        margin: auto auto;
+                        
+                    }
+    
+                    h3{
+                        display: none;
+                    }
+                }
+
+                #nav__items{
+                    top: 6rem;
+
+                    a{
+                        color: $white-color;
+                    }
+
+                    // .change-color{
+                    //     color: $white-color;
+                    // }
+                }
+                
+            }
+        }
+
+        
+    }
+    
+
 }
