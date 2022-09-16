@@ -46,9 +46,9 @@
     color: white;
 }
 
-.explore-content .ctn{
+/* .explore-content .ctn{
     margin-top: 40px;
-}
+} */
 
 .animal-assistance_features{
     background-color: #F2F2F4 !important;
@@ -124,10 +124,10 @@
 
 @media screen and (max-width: 600px) {
 
-    .explore{
+    /* .explore{
         background-size: contain;
         background-color: rgba(210, 238, 172, 0.727);
-    }
+    } */
 
     .explore-content{
         width: 80%;

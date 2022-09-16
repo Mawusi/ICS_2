@@ -90,11 +90,9 @@
 
 #main_profile .container{
     position: relative;
-    /* width: 1000px; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* margin: 20px; */
 }
 
 #main_profile .container .card{

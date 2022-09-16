@@ -161,6 +161,7 @@ input, textarea, select{
         /* margin-top: 5em; */
         /* margin-bottom: 10em; */
         height: 130vh;
+        position: relative;
     }
 
     .contact__container{
@@ -181,5 +182,6 @@ input, textarea, select{
     .form__name input[type="text"]{
         width: 100%;
     }
+
 }
 

@@ -1,0 +1,70 @@
+nav{
+    /* background: red; */
+    background: rgba(18, 56, 13, 0.841);
+    /* background: rgba(25, 34, 12, 0.727); */
+}
+
+.tagline_mob{
+    display: none;
+}
+
+#appointment{
+    margin-top: 9rem;
+}
+
+#appointment .container{
+margin-top: -2rem;
+}
+
+.aside__image{
+    width: auto;
+    margin-bottom: 1rem;
+    transition: 500ms ease;
+}
+
+.aside__image:hover{
+    transform: scale(1.1);
+}
+
+.contact__aside h2{
+    margin-bottom: .1rem;
+}
+
+.contact__aside span{
+    font-size: 1rem;
+}
+
+.contact__details{
+    margin-top: 1rem;
+}
+
+.contact__details i{
+    color: #079868;
+    font-size: 1.5rem;
+}
+
+.contact__details li{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    margin-bottom: .1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    #appointment{
+        margin-top: 6rem;
+    }
+
+    .tagline_mob{
+        display: block;
+        font-family: Brush Script Std, cursive;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #appointment{
+        margin-top: 6rem;
+    }
+}
+

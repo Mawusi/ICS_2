@@ -216,17 +216,17 @@ nav{
         height: 6rem;
 
         &.window-scroll{
-            height: 8rem;
+            height: 10rem;
             
             .container{
 
                 .nav__logo{
-                    margin: -2rem;
+                    margin: -3rem;
                     
                     .tagline{
                         display: block;
                         left: 70px;
-                        font-size: .9rem;
+                        font-size: 1.1rem;
                         
                     }
 
@@ -237,7 +237,7 @@ nav{
                     img{
                         display: block;
                         position: sticky;
-                        width: 25%;
+                        width: 32%;
                         margin: auto auto;
 
                         // width: 20%;
@@ -399,7 +399,7 @@ nav{
     nav{
         
         &.window-scroll{
-            height: 8rem;
+            height: 10rem;
             
             .container{
     
@@ -412,7 +412,7 @@ nav{
                 
                     img{
                         position: sticky;
-                        width: 45%;
+                        width: 52%;
                         margin: auto auto;
                         
                     }
