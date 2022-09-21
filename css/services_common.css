@@ -1,0 +1,12 @@
+nav{
+    background: rgba(24, 36, 10, 0.785);
+}
+
+.line{
+    width: 130px;
+    height: 4px;
+    background: #079868;
+    margin: .1em 0;
+    margin-bottom: 2em;
+    border-radius: 5px;
+}

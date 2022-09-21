@@ -21,6 +21,36 @@ faqs.forEach(faq => {
 })
 
 
+ // Show and hide nav buttons
+// const nav = document.querySelector('.nav__links');
+// const openNavBtn = document.querySelector('#nav__toggle-open');
+// const closeNavBtn = document.querySelector('#nav__toggle-close');
+
+// const openNav = () => {
+//     nav.style.display = 'flex';
+//     openNavBtn.style.display ='none';
+//     closeNavBtn.style.display ='inline-block';
+// }
+
+// openNavBtn.addEventListener('click', openNav);
+
+// const closeNav = () => {
+//     nav.style.display = 'none';
+//     openNavBtn.style.display ='inline-block';
+//     closeNavBtn.style.display ='none';
+// }
+
+// closeNavBtn.addEventListener('click', closeNav);
+
+
+// // Hide nav menu on click of nav link
+// if(document.body.clientWidth < 1024){
+//     nav.querySelectorAll('li a').forEach(navLink => {
+//         navLink.addEventListener('click', closeNav)
+//     })
+// }
+
+
 const navItems = document.querySelector('#nav__items');
 const openNavBtn = document.querySelector('#open__nav-btn');
 const closeNavBtn = document.querySelector('#close__nav-btn');
@@ -48,31 +78,7 @@ if(window.innerWidth < 1024){
     })
 }
 
-// closeNavBtn.addEventListener('click', () =>{
-//     navItems.style.display = 'none';
-//     closeNavBtn.style.display = 'none';
-//     openNavBtn.style.display = 'inline-block';
-// })
 
-// var swiper = new Swiper(".testimonials-slider", {
-//     slidesPerView: 1,
-//     spaceBetween: 40,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-
-//     breakpoints: {
-//         600: {
-//             slidesPerView: 2 
-//         },
-
-//         1024: {
-//             slidesPerView: 3
-//         }
-//     }
-
-//   });
 
 var swiper = new Swiper(".testimonials-slider", {
     spaceBetween: 20,
@@ -113,5 +119,8 @@ var swiper = new Swiper(".testimonials-slider", {
         },
     },
   });
+
+
+ 
 
 

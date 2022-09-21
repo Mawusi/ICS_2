@@ -12,18 +12,11 @@
 
 body{
     background-color: var(--white);
-    /* color: var(--black); */
-}
-
-nav{
-    /* background: red; */
-    background: rgba(18, 56, 13, 0.841);
-    /* background: rgba(25, 34, 12, 0.727); */
 }
 
 #upcoming_services_for_desktop{
-    margin-top: 6rem;
-    /* zoom: 90%; */
+    margin: 0rem;
+    zoom: 85%;
 }
 
 .heading{
@@ -45,18 +38,16 @@ nav{
 }
 
 .courses{
-    /* height: 100vh; */
-    max-width: 75em;
     margin: 0 auto;
     padding: 3em;
 }
 
+.courses h1{
+    margin-top: 10rem;
+}
+
 .courses .slide{
     background: linear-gradient(10deg, var(--lightgreen), var(--colorvariant));
-    /* background-color: var(--lightgreen); */
-    /* background: rgba(188, 251, 100, 0.783); */
-    /* background: rgba(210, 238, 172, 0.727); */
-    
     border-radius: .5rem;
     text-align: center;
     padding: 1rem;
