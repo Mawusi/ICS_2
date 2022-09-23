@@ -7,7 +7,7 @@
 }
 
 #appointment .container{
-    margin-top: 6rem;
+    margin-top: 10rem;
 }
 
 .aside__image{
@@ -47,6 +47,7 @@
 
 @media screen and (max-width: 720px) {
     #appointment .container{
+        margin-top: 6rem;
         grid-template-columns: 1fr;
     }
 }
